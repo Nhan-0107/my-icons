@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertically Shaking Social Media Icons</title>
+<style>
+    /* Basic styles for the icons */
+    .icon-container {
+        position: fixed;
+        bottom: 20px; /* Đặt icon ở phía dưới của trang */
+        right: 20px; /* Canh phải của trang */
+        display: flex;
+        flex-direction: column; /* Sắp xếp icon theo chiều dọc */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        animation: wiggle 0.5s ease-in-out infinite;
+    }
+
+    /* Keyframes for intense wiggle effect */
+    @keyframes wiggle {
+        0%, 100% { transform: rotate(-15deg); }
+        50% { transform: rotate(15deg); }
+    }
+</style>
+</head>
+<body>
+
+<div class="icon-container">
+    <!-- Messenger Icon -->
+    <a href="https://www.facebook.com/messages/t/470386306158615" target="_blank" class="icon messenger" title="Messenger">
+        <img alt="messenger" src="https://drceutics.vn/wp-content/plugins/button-contact-vr/img/messenger.png">
+    </a>
+    <!-- Facebook Icon -->
+    <a href="https://www.facebook.com/yourpage" target="_blank" class="icon facebook" title="Facebook">
+       <img alt="Fanpage" src="https://drceutics.vn/wp-content/plugins/button-contact-vr/img/Facebook.png">
+    </a>
+    <!-- Hotline Icon -->
+    <a href="tel:+123456789" class="icon hotline" title="Hotline">
+       <img alt="Hotline" src="https://img.icons8.com/color/48/000000/phone.png">
+    </a>
+</div>
+
+</body>
+</html>
